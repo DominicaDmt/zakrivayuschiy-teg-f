@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +27,7 @@
 				<article class="card">
 					<h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-1" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-brightness" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -54,7 +55,7 @@
 				<article class="card">
 					<h2 class="card__title">1 спринт: Я — чистый лист</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-2" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-monochrome" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -82,7 +83,7 @@
 				<article class="card">
 					<h2 class="card__title">1 спринт: А если не получится?</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-3" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-bright" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -110,7 +111,7 @@
 				<article class="card">
 					<h2 class="card__title">2 спринт: Погоня за идеалом</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-4" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-blur" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -138,7 +139,7 @@
 				<article class="card">
 					<h2 class="card__title">2 спринт: О тех, кто рядом</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-5" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-contrast" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -166,7 +167,7 @@
 				<article class="card">
 					<h2 class="card__title">3 спринт: Обходные стратегии</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-6" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-saturation" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -194,7 +195,7 @@
 				<article class="card">
 					<h2 class="card__title">3 спринт: Когда опускаются руки</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-7" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-dark" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -222,7 +223,7 @@
 				<article class="card">
 					<h2 class="card__title">3 спринт: Когда опускаются руки</h2>
 					<div class="card__img-container">
-						<img class="card__img filter-8" src="./images/image.png" alt="Изображение фургона">
+						<img class="card__img filter-vintage" src="./images/image.png" alt="Изображение фургона">
 						<span class="card__label">&lt;/html&gt;</span>
 					</div>
 					<div class="card__content">
@@ -247,27 +248,27 @@
 				</article>
 			</li>
 		</ul>
-	</main>
-	<footer class="footer">
-		<div class="footer__button-container">
-			<button type="button" class="button footer__button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
-				<svg class="button__icon">
-					<use href="svg/floppy.svg#floppy" />
-				</svg>
-				<span class="button__text">Сохранить на память</span>
-			</button>
-		</div>
-		<dialog class="modal" id="dialog-id">
-			<div class="modal__content">
-				<svg class="modal__button-icon" width="53" height="53" viewBox="0 0 39 39">
-					<use href="svg/floppy.svg#floppy" />
-				</svg>
-
-				<span class="modal__text">Вставьте дискету, чтобы продолжить</span>
+		<div class="modal__container">
+			<div class="modal__button-container">
+				<button type="button" class="button save-button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
+					<svg class="button__icon" viewBox="0 0 28 28" widht="21" widht="21">
+						<use href="svg/floppy.svg#floppy" />
+					</svg>
+					<span class="button__text">Сохранить на память</span>
+				</button>
 			</div>
-			<button type="button" onclick="window['dialog-id'].close()" class="button modal__button"><span class="button__text">ОК</span></button>
-		</dialog>
-	</footer>
+			<dialog class="modal" id="dialog-id">
+				<div class="modal__content">
+					<svg class="modal__button-icon" width="53" height="53" viewBox="0 0 39 39">
+						<use href="svg/floppy.svg#floppy" />
+					</svg>
+
+					<p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+				</div>
+				<button type="button" onclick="window['dialog-id'].close()" class="button modal__button"><span class="button__text">ок</span></button>
+			</dialog>
+		</div>
+	</main>
 	<script src="./scripts/like.js"></script>
 </body>
 </html>
