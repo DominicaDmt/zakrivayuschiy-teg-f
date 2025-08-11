@@ -140,6 +140,7 @@
     position: relative;
     transition: box-shadow 0.3s ease;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .button:focus {
@@ -170,6 +171,7 @@
     transition: border-color 0.3s ease;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -261,9 +263,7 @@
     inline-size: 130px;
     padding: 12px 33px;
     text-align: center;
-    justify-content: center;
-
-   
+    justify-content: center;  
 }
 
 .button__text {
@@ -307,18 +307,13 @@
     mix-blend-mode: difference;
 }
 
-
-
-
-
 .modal[open] {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-height: 191px;
     max-width: 341px;
-    padding: 45px 30px 40px 35px;
+    padding: 28px 35px 30px 40px;
     font-family: var(--accent-font-family);
     font-size: 14px;
     text-transform: uppercase;
@@ -396,7 +391,6 @@ body:has(.modal[open]) {
     block-size: 21px;
     
 }
-
 
     .modal__button {
         padding: 12.5px 132.5px;
