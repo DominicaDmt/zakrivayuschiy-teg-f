@@ -171,7 +171,6 @@
     transition: border-color 0.3s ease;
     display: inline-flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -258,13 +257,13 @@
 }
 
 .card__like-button {
-  display: inline-flex;
+    display: inline-flex;
     block-size: 38px;
     inline-size: 130px;
     padding: 12px 33px;
     text-align: center;
-    justify-content: center;  
-}
+    justify-content: center;
+  }
 
 .button__text {
     position: relative;
